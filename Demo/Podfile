@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'Demo' do
+  use_frameworks!
+  
+#  pod 'Permission/Core', :path => "../"
+#  pod 'Permission/Alert', :path => "../"
+#  pod 'Permission/Location', :path => "../"
+  pod 'Permission', :path => "../"
+
+end

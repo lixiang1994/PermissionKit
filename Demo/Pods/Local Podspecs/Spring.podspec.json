@@ -1,0 +1,27 @@
+{
+  "name": "Spring",
+  "version": "1.1.5",
+  "summary": "一个简单易用的iOS链式动画扩展库 Swift",
+  "homepage": "https://github.com/lixiang1994/Spring",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LEE": "18611401994@163.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/lixiang1994/Spring.git",
+    "tag": "1.1.5"
+  },
+  "source_files": "Sources/**/*.swift",
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "swift_version": "5.0"
+}
