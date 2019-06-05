@@ -27,7 +27,13 @@ Permission Manager
 ```ruby
 source 'https://github.com/lixiang1994/Specs'
 
+// All
 pod 'Permission'
+
+// Add separately
+pod 'Permission/Motion', :path => "../"
+pod 'Permission/Camera', :path => "../"
+pod 'Permission/Location', :path => "../"
 ```
 
 **Carthage - Cartfile**
