@@ -36,21 +36,3 @@ extension Permissionable {
         return true
     }
 }
-
-public protocol PermissionAlertable {
-    
-    init(_ source: PermissionAlertContentSource)
-    
-    func show(_ status: AlertStatus, with сompletion: @escaping (Bool) -> Void)
-}
-
-public protocol PermissionAlertContentSource {
-    
-    func title(_ status: AlertStatus) -> String
-    
-    func message(_ status: AlertStatus) -> String
-    
-    func cancelAction(_ status: AlertStatus) -> String
-    
-    func confirmAction(_ status: AlertStatus) -> String
-}
