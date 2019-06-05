@@ -15,23 +15,23 @@ import CoreLocation
 
 extension Permission {
     
+    public enum Location {
+        case whenInUse
+        case alwaysAndWhenInUse
+    }
+    
     public static func location(_ type: Location) -> Provider {
         return .init(LocationManager(type))
     }
-}
-
-public enum Location {
-    case whenInUse
-    case alwaysAndWhenInUse
 }
 
 struct LocationManager: Permissionable {
     
     private static var delegate: LocationDelegate?
     
-    private let type: Location
+    private let type: Permission.Location
     
-    init(_ type: Location) {
+    init(_ type: Permission.Location) {
         self.type = type
     }
     
@@ -83,10 +83,10 @@ struct LocationManager: Permissionable {
 class LocationDelegate: NSObject, CLLocationManagerDelegate {
     
     let manager = CLLocationManager()
-    let type: Location
+    let type: Permission.Location
     let сompletion: () -> Void
     
-    init(_ type: Location, _ сompletion: @escaping () -> Void) {
+    init(_ type: Permission.Location, _ сompletion: @escaping () -> Void) {
         self.type = type
         self.сompletion = сompletion
         super.init()
