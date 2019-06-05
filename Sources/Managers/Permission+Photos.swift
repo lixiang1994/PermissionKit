@@ -13,14 +13,14 @@
 
 import Photos
 
-extension Permission {
+extension Provider {
     
     public static let photos: Provider = .init(PhotosManager())
 }
 
 struct PhotosManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .authorized:       return .authorized
         case .denied:           return .denied

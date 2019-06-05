@@ -13,14 +13,14 @@
 
 import MediaPlayer
 
-extension Permission {
+extension Provider {
     
     public static let media: Provider = .init(MediaManager())
 }
 
 struct MediaManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         if #available(iOS 9.3, *) {
             switch _status {
             case .authorized:       return .authorized

@@ -31,9 +31,16 @@ source 'https://github.com/lixiang1994/Specs'
 pod 'Permission'
 
 // 单独添加所需
-pod 'Permission/Motion', :path => "../"
-pod 'Permission/Camera', :path => "../"
-pod 'Permission/Location', :path => "../"
+pod 'Permission/Camera'
+pod 'Permission/Photos'
+pod 'Permission/Contacts'
+pod 'Permission/Event'
+pod 'Permission/Motion'
+pod 'Permission/Speech'
+pod 'Permission/Media'
+pod 'Permission/Siri'
+pod 'Permission/Location'
+pod 'Permission/Notification'
 ```
 
 **Carthage - Cartfile**
@@ -54,32 +61,48 @@ import Permission
 
 ### 属性
 ```swift
-Permission.camera.isAuthorized
+Provider.camera.isAuthorized
 
-Permission.photos.isAuthorized
+Provider.photos.isAuthorized
 
-Permission.XXXXXX.isAuthorized
+Provider.XXXXXX.isAuthorized
 ```
 
 ### 方法
 ```swift
-Permission.camera.request { (result) in
-print("isAuthorized: \(result)")
+Provider.camera.request { (result) in
+    print("isAuthorized: \(result)")
 }
 
-Permission.XXXXXX.request { (result) in
-print("isAuthorized: \(result)")
+Provider.XXXXXX.request { (result) in
+    print("isAuthorized: \(result)")
 }
 ```
 
 ### Alert
-```
 
+#### 协议
+```swift
+public protocol PermissionAlertable {
+
+    init(_ source: PermissionAlertContentSource)
+
+    func show(_ status: AlertStatus, with сompletion: @escaping (Bool) -> Void)
+}
 ```
+#### 系统Alert 基于 `UIAlertController`
+```
+let alert = SystemAlert(ChineseAlertContent())
+Provider.camera.request(alert) { result in
+    /* ... */
+}
+```
+自定义Alert需要实现 `PermissionAlertable` 协议
+
 
 ## 贡献
 
-如果你需要实现特定功能或遇到错误，请打开issue。 如果你自己扩展了Permission的功能并希望其他人也使用它，请提交拉取请求。
+如果你需要实现特定功能或遇到错误，请打开issue。 如果你自己扩展了 Permission 的功能并希望其他人也使用它，请提交拉取请求。
 
 
 ## 协议

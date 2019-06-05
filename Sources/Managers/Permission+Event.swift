@@ -13,7 +13,7 @@
 
 import EventKit
 
-extension Permission {
+extension Provider {
     
     public static let calendar: Provider = .init(CalendarManager())
     
@@ -22,7 +22,7 @@ extension Permission {
 
 struct CalendarManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .authorized:       return .authorized
         case .denied:           return .denied
@@ -59,7 +59,7 @@ struct CalendarManager: Permissionable {
 
 struct ReminderManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .authorized:       return .authorized
         case .denied:           return .denied

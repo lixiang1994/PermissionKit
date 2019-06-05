@@ -13,14 +13,14 @@
 
 import Contacts
 
-extension Permission {
+extension Provider {
     
     public static let contacts: Provider = .init(ContactsManager())
 }
 
 struct ContactsManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .authorized:       return .authorized
         case .denied:           return .denied

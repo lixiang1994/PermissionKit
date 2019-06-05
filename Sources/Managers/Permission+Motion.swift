@@ -13,14 +13,14 @@
 
 import CoreMotion
 
-extension Permission {
+extension Provider {
     
     public static let motion: Provider = .init(MotionManager())
 }
 
 struct MotionManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         if #available(iOS 11.0, *) {
             switch _status {
             case .authorized:       return .authorized

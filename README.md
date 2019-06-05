@@ -31,9 +31,16 @@ source 'https://github.com/lixiang1994/Specs'
 pod 'Permission'
 
 // Add separately
-pod 'Permission/Motion', :path => "../"
-pod 'Permission/Camera', :path => "../"
-pod 'Permission/Location', :path => "../"
+pod 'Permission/Camera'
+pod 'Permission/Photos'
+pod 'Permission/Contacts'
+pod 'Permission/Event'
+pod 'Permission/Motion'
+pod 'Permission/Speech'
+pod 'Permission/Media'
+pod 'Permission/Siri'
+pod 'Permission/Location'
+pod 'Permission/Notification'
 ```
 
 **Carthage - Cartfile**
@@ -55,28 +62,43 @@ Here are some usage examples. All devices are also available as simulators:
 
 ### Property
 ```swift
-Permission.camera.isAuthorized
+Provider.camera.isAuthorized
 
-Permission.photos.isAuthorized
+Provider.photos.isAuthorized
 
-Permission.XXXXXX.isAuthorized
+Provider.XXXXXX.isAuthorized
 ```
 
 ### Functions
 ```swift
-Permission.camera.request { (result) in
+Provider.camera.request { (result) in
     print("isAuthorized: \(result)")
 }
 
-Permission.XXXXXX.request { (result) in
+Provider.XXXXXX.request { (result) in
     print("isAuthorized: \(result)")
 }
 ```
 
 ### Alert
-```
 
+#### Protocol
+```swift
+public protocol PermissionAlertable {
+
+    init(_ source: PermissionAlertContentSource)
+
+    func show(_ status: AlertStatus, with сompletion: @escaping (Bool) -> Void)
+}
 ```
+#### SystemAlert based `UIAlertController`
+```
+let alert = SystemAlert(ChineseAlertContent())
+Provider.camera.request(alert) { result in
+    /* ... */
+}
+```
+CustomAlert  need to implement `PermissionAlertable` protocol
 
 ## Contributing
 

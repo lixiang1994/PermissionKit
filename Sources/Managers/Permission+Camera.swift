@@ -13,7 +13,7 @@
 
 import AVFoundation
 
-extension Permission {
+extension Provider {
     
     public static let camera: Provider = .init(CameraManager())
     
@@ -22,7 +22,7 @@ extension Permission {
 
 struct CameraManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .authorized:       return .authorized
         case .denied:           return .denied
@@ -58,7 +58,7 @@ struct CameraManager: Permissionable {
 
 struct MicrophoneManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         switch _status {
         case .granted:          return .authorized
         case .denied:           return .denied

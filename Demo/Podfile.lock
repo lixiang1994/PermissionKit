@@ -1,7 +1,7 @@
 PODS:
-  - Permission (1.0.0):
-    - Permission/Core (= 1.0.0)
-  - Permission/Core (1.0.0)
+  - Permission (1.0.3):
+    - Permission/Core (= 1.0.3)
+  - Permission/Core (1.0.3)
 
 DEPENDENCIES:
   - Permission (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Permission: d66e30dee671f654efab8bc9067b7d66972b9180
+  Permission: 28b94188a06f5f96b54214e5f60846694db95a97
 
 PODFILE CHECKSUM: cb7fbb3624de1a5cf43d4221e20a68b2a30fee33
 

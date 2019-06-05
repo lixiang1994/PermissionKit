@@ -13,14 +13,14 @@
 
 import Speech
 
-extension Permission {
+extension Provider {
     
     public static let speech: Provider = .init(SpeechManager())
 }
 
 struct SpeechManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         if #available(iOS 10.0, *) {
             switch _status {
             case .authorized:       return .authorized

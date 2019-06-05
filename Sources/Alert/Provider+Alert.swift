@@ -40,7 +40,7 @@ public protocol PermissionAlertContentSource {
     func confirmAction(_ status: AlertStatus) -> String
 }
 
-extension Permission.Provider {
+extension Provider {
     
     /// 请求授权
     ///

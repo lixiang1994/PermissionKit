@@ -13,7 +13,7 @@
 
 import UserNotifications
 
-extension Permission {
+extension Provider {
     
     public static let notification: Provider = .init(NotificationManager())
 }
@@ -45,7 +45,7 @@ struct NotificationManager: Permissionable {
         }
     }
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         if #available(iOS 10.0, *) {
             switch _status {
             case .authorized, .provisional:     return .authorized

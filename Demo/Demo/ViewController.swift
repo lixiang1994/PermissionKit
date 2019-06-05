@@ -68,60 +68,53 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let mode: Permission.Provider
+        let mode: Permission.Mode
         switch indexPath.row {
         case 0: // 相机权限
-            mode = Permission.camera
-            mode.alias = { "相机" }
+            mode = .camera
             
         case 1: // 相册权限
-            mode = Permission.photos
-            mode.alias = { "相册" }
+            mode = .photos
             
         case 2: // 日历权限
-            mode = Permission.calendar
-            mode.alias = { "カレンダー" }
+            mode = .calendar
             
         case 3: // 提醒权限
-            mode = Permission.reminder
+            mode = .reminder
             
         case 4: // 联系人权限
-            mode = Permission.contacts
+            mode = .contacts
             
         case 5: // 语音权限
-            mode = Permission.speech
+            mode = .speech
             
         case 6: // 动作权限
-            mode = Permission.motion
+            mode = .motion
             
         case 7: // 媒体权限
-            mode = Permission.media
+            mode = .media
             
         case 8: // Siri权限
-            mode = Permission.siri
+            mode = .siri
             
         case 9: // 麦克风权限
-            mode = Permission.microphone
+            mode = .microphone
             
         case 10: // 通知权限
-            mode = Permission.notification
+            mode = .notification
             
         case 11: // 位置权限
-            mode = Permission.location(.whenInUse)
+            mode = .location(.whenInUse)
             
         default:
-            mode = Permission.camera
+            mode = .camera
         }
         
-        print("isAuthorized: \(mode.isAuthorized)")
+        print("isAuthorized: \(Permission.isAuthorized(mode))")
         print("request ============")
-        mode.request(SystemAlert(ChineseAlertContent())) { (result) in
-            print("isAuthorized: \(result)")
+        Permission.request(mode) { (result) in
+            print("isAuthorized: \(Permission.isAuthorized(mode))")
             print("end ================")
         }
-//        mode.request(with: { (result) in
-//            print("isAuthorized: \(result)")
-//            print("end ================")
-//        })
     }
 }

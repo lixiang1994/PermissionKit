@@ -15,7 +15,7 @@ import Foundation
 
 protocol Permissionable {
     
-    var status: Permission.Status { get }
+    var status: PermissionStatus { get }
     
     var name: String { get }
     
@@ -34,5 +34,23 @@ extension Permissionable {
             }
         }
         return true
+    }
+}
+
+enum PermissionStatus {
+    case authorized
+    case denied
+    case disabled
+    case notDetermined
+    case invalid
+    
+    var name: String {
+        switch self {
+        case .authorized:               return "Authorized"
+        case .denied:                   return "Denied"
+        case .disabled:                 return "Disabled"
+        case .notDetermined:            return "Not Determined"
+        case .invalid:                  return "Invalid"
+        }
     }
 }

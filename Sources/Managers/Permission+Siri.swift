@@ -13,14 +13,14 @@
 
 import Intents
 
-extension Permission {
+extension Provider {
     
     public static let siri: Provider = .init(SiriManager())
 }
 
 struct SiriManager: Permissionable {
     
-    var status: Permission.Status {
+    var status: PermissionStatus {
         if #available(iOS 10.0, *) {
             switch _status {
             case .authorized:       return .authorized

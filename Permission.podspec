@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'Permission'
-s.version      = '1.0.2'
+s.version      = '1.0.3'
 s.summary      = 'An elegant permission manager written in swift'
 
 s.homepage     = 'https://github.com/lixiang1994/Permission'

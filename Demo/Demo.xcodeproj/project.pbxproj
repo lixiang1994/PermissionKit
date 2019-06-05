@@ -14,6 +14,7 @@
 		C93FF76D224F1F37002277BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93FF76C224F1F37002277BC /* Assets.xcassets */; };
 		C93FF770224F1F37002277BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FF76E224F1F37002277BC /* LaunchScreen.storyboard */; };
 		C9D24F6D22A693F400CAED1E /* ChineseAlertContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6C22A693F400CAED1E /* ChineseAlertContent.swift */; };
+		C9FDC34A22A7D121007F81DA /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDC34922A7D121007F81DA /* Permission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C93FF76F224F1F37002277BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93FF771224F1F37002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D24F6C22A693F400CAED1E /* ChineseAlertContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseAlertContent.swift; sourceTree = "<group>"; };
+		C9FDC34922A7D121007F81DA /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C93FF76C224F1F37002277BC /* Assets.xcassets */,
 				C93FF76E224F1F37002277BC /* LaunchScreen.storyboard */,
 				C93FF771224F1F37002277BC /* Info.plist */,
+				C9FDC34922A7D121007F81DA /* Permission.swift */,
 				C9D24F6C22A693F400CAED1E /* ChineseAlertContent.swift */,
 			);
 			path = Demo;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FDC34A22A7D121007F81DA /* Permission.swift in Sources */,
 				C9D24F6D22A693F400CAED1E /* ChineseAlertContent.swift in Sources */,
 				C93FF768224F1F35002277BC /* ViewController.swift in Sources */,
 				C93FF766224F1F35002277BC /* AppDelegate.swift in Sources */,
