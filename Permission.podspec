@@ -76,9 +76,9 @@ s.subspec 'Media' do |sub|
 end
 
 s.subspec 'Siri' do |sub|
-sub.dependency 'Permission/Core'
-sub.source_files  = 'Sources/Managers/Permission+Siri.swift'
-sub.weak_frameworks = 'Intents'
+    sub.dependency 'Permission/Core'
+    sub.source_files  = 'Sources/Managers/Permission+Siri.swift'
+    sub.weak_frameworks = 'Intents'
 end
 
 s.subspec 'Location' do |sub|
