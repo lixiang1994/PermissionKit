@@ -13,31 +13,34 @@
 
 import UIKit
 
-public class Provider {
+extension Permission {
     
-    let manager: () -> Permissionable
-    
-    /// 是否授权
-    public var isAuthorized: Bool {
-        return manager().status == .authorized
-    }
-    
-    init(_ manager: @escaping @autoclosure () -> Permissionable) {
-        self.manager = manager
-    }
-    
-    /// 别名
-    public var alias: (() -> String)?
-    
-    /// 请求授权
-    ///
-    /// - Parameters:
-    ///   - сompletion: 结果回调
-    public func request(_ сompletion: @escaping (Bool) -> Void) {
-        let manager = self.manager()
-        manager.checkUsageDescriptions()
-        manager.request {
-            сompletion(manager.status == .authorized)
+    public class Provider {
+        
+        let manager: () -> Permissionable
+        
+        /// 是否授权
+        public var isAuthorized: Bool {
+            return manager().status == .authorized
+        }
+        
+        init(_ manager: @escaping @autoclosure () -> Permissionable) {
+            self.manager = manager
+        }
+        
+        /// 别名
+        public var alias: (() -> String)?
+        
+        /// 请求授权
+        ///
+        /// - Parameters:
+        ///   - сompletion: 结果回调
+        public func request(_ сompletion: @escaping (Bool) -> Void) {
+            let manager = self.manager()
+            manager.checkUsageDescriptions()
+            manager.request {
+                сompletion(manager.status == .authorized)
+            }
         }
     }
 }

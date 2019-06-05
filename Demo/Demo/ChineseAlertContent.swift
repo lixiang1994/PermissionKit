@@ -71,4 +71,3 @@ fileprivate extension Bundle {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String ?? ""
     }
 }
-
