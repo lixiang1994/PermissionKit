@@ -33,7 +33,8 @@ struct PhotosManager: Permissionable {
     var name: String { return "Photo Library" }
     
     var usageDescriptions: [String] {
-        return ["NSPhotoLibraryUsageDescription"]
+        return ["NSPhotoLibraryUsageDescription",
+                "NSPhotoLibraryAddUsageDescription"]
     }
     
     private var _status: PHAuthorizationStatus {
