@@ -48,9 +48,11 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>用于显示您所在的城市名称</string>
 	<key>NSCameraUsageDescription</key>
-	<string>用户设置你的头像</string>
+	<string>拍摄相片</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>用于设置你的头像</string>
+	<string>访问相册</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>保存图片</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>用于显示您所在的城市名称</string>
 	<key>NSLocationUsageDescription</key>
