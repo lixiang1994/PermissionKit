@@ -6,7 +6,7 @@
 //  Copyright © 2019 swift. All rights reserved.
 //
 
-import Permission
+import PermissionKit
 
 public struct ChineseAlertContent: PermissionAlertContentSource {
     

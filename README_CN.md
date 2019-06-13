@@ -1,5 +1,5 @@
 
-# Permission
+# PermissionKit
 Permission Manager
 
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
@@ -28,25 +28,25 @@ Permission Manager
 source 'https://github.com/lixiang1994/Specs'
 
 // 完整
-pod 'Permission'
+pod 'PermissionKit'
 
 // 单独添加所需
-pod 'Permission/Camera'
-pod 'Permission/Photos'
-pod 'Permission/Contacts'
-pod 'Permission/Event'
-pod 'Permission/Motion'
-pod 'Permission/Speech'
-pod 'Permission/Media'
-pod 'Permission/Siri'
-pod 'Permission/Location'
-pod 'Permission/Notification'
+pod 'PermissionKit/Camera'
+pod 'PermissionKit/Photos'
+pod 'PermissionKit/Contacts'
+pod 'PermissionKit/Event'
+pod 'PermissionKit/Motion'
+pod 'PermissionKit/Speech'
+pod 'PermissionKit/Media'
+pod 'PermissionKit/Siri'
+pod 'PermissionKit/Location'
+pod 'PermissionKit/Notification'
 ```
 
 **Carthage - Cartfile**
 
 ```ruby
-github "lixiang1994/Permission"
+github "lixiang1994/PermissionKit"
 ```
 
 ## 使用
@@ -54,7 +54,7 @@ github "lixiang1994/Permission"
 首先导入:
 
 ```swift
-import Permission
+import PermissionKit
 ```
 
 下面是一些简单示例. 支持所有设备和模拟器:
@@ -102,9 +102,9 @@ Provider.camera.request(alert) { result in
 
 ## 贡献
 
-如果你需要实现特定功能或遇到错误，请打开issue。 如果你自己扩展了 Permission 的功能并希望其他人也使用它，请提交拉取请求。
+如果你需要实现特定功能或遇到错误，请打开issue。 如果你自己扩展了 PermissionKit 的功能并希望其他人也使用它，请提交拉取请求。
 
 
 ## 协议
 
-Permission 使用 MIT 协议. 有关更多信息，请参阅 [LICENSE](LICENSE) 文件.
+PermissionKit 使用 MIT 协议. 有关更多信息，请参阅 [LICENSE](LICENSE) 文件.

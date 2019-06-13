@@ -17,7 +17,7 @@
 		C922335922A517BF00FD5DDE /* Permission+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335822A517BF00FD5DDE /* Permission+Camera.swift */; };
 		C922335D22A52B4700FD5DDE /* Permission+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335C22A52B4700FD5DDE /* Permission+Media.swift */; };
 		C922335F22A5306E00FD5DDE /* Permission+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335E22A5306E00FD5DDE /* Permission+Location.swift */; };
-		C93FF795224F3492002277BC /* Permission.h in Headers */ = {isa = PBXBuildFile; fileRef = C93FF793224F3492002277BC /* Permission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C93FF795224F3492002277BC /* PermissionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C93FF793224F3492002277BC /* PermissionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9D24F6422A6751100CAED1E /* SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6322A6751100CAED1E /* SystemAlert.swift */; };
 		C9D24F6622A6756600CAED1E /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6522A6756600CAED1E /* Provider.swift */; };
 		C9D24F6822A67CD100CAED1E /* Provider+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6722A67CD100CAED1E /* Provider+Alert.swift */; };
@@ -36,8 +36,8 @@
 		C922335822A517BF00FD5DDE /* Permission+Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Camera.swift"; sourceTree = "<group>"; };
 		C922335C22A52B4700FD5DDE /* Permission+Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Media.swift"; sourceTree = "<group>"; };
 		C922335E22A5306E00FD5DDE /* Permission+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Location.swift"; sourceTree = "<group>"; };
-		C93FF790224F3492002277BC /* Permission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Permission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C93FF793224F3492002277BC /* Permission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Permission.h; sourceTree = "<group>"; };
+		C93FF790224F3492002277BC /* PermissionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93FF793224F3492002277BC /* PermissionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionKit.h; sourceTree = "<group>"; };
 		C93FF794224F3492002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D24F6322A6751100CAED1E /* SystemAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlert.swift; sourceTree = "<group>"; };
 		C9D24F6522A6756600CAED1E /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		C93FF791224F3492002277BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C93FF790224F3492002277BC /* Permission.framework */,
+				C93FF790224F3492002277BC /* PermissionKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 				C9D24F6922A67CD600CAED1E /* Alert */,
 				C922335522A5144000FD5DDE /* Managers */,
 				C93FF794224F3492002277BC /* Info.plist */,
-				C93FF793224F3492002277BC /* Permission.h */,
+				C93FF793224F3492002277BC /* PermissionKit.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -128,16 +128,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93FF795224F3492002277BC /* Permission.h in Headers */,
+				C93FF795224F3492002277BC /* PermissionKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C93FF78F224F3492002277BC /* Permission */ = {
+		C93FF78F224F3492002277BC /* PermissionKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "Permission" */;
+			buildConfigurationList = C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "PermissionKit" */;
 			buildPhases = (
 				C93FF78B224F3492002277BC /* Headers */,
 				C93FF78C224F3492002277BC /* Sources */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = Permission;
+			name = PermissionKit;
 			productName = Spring;
-			productReference = C93FF790224F3492002277BC /* Permission.framework */;
+			productReference = C93FF790224F3492002277BC /* PermissionKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C93FF78A224F3492002277BC /* Build configuration list for PBXProject "Permission" */;
+			buildConfigurationList = C93FF78A224F3492002277BC /* Build configuration list for PBXProject "PermissionKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C93FF78F224F3492002277BC /* Permission */,
+				C93FF78F224F3492002277BC /* PermissionKit */,
 			);
 		};
 /* End PBXProject section */
@@ -405,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C93FF78A224F3492002277BC /* Build configuration list for PBXProject "Permission" */ = {
+		C93FF78A224F3492002277BC /* Build configuration list for PBXProject "PermissionKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C93FF796224F3492002277BC /* Debug */,
@@ -414,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "Permission" */ = {
+		C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "PermissionKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C93FF799224F3492002277BC /* Debug */,

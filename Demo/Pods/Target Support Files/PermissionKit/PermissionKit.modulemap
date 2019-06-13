@@ -1,0 +1,6 @@
+framework module PermissionKit {
+  umbrella header "PermissionKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

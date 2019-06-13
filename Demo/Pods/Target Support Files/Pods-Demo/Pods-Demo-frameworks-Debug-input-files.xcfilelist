@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Permission/Permission.framework
+${BUILT_PRODUCTS_DIR}/PermissionKit/PermissionKit.framework

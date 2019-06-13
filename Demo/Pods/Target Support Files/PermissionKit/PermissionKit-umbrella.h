@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PermissionVersionNumber;
-FOUNDATION_EXPORT const unsigned char PermissionVersionString[];
+FOUNDATION_EXPORT double PermissionKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char PermissionKitVersionString[];
 

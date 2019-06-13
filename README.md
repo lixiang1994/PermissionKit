@@ -1,4 +1,4 @@
-# Permission
+# PermissionKit
 Permission Manager
 
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
@@ -28,25 +28,25 @@ Permission Manager
 source 'https://github.com/lixiang1994/Specs'
 
 // All
-pod 'Permission'
+pod 'PermissionKit'
 
 // Add separately
-pod 'Permission/Camera'
-pod 'Permission/Photos'
-pod 'Permission/Contacts'
-pod 'Permission/Event'
-pod 'Permission/Motion'
-pod 'Permission/Speech'
-pod 'Permission/Media'
-pod 'Permission/Siri'
-pod 'Permission/Location'
-pod 'Permission/Notification'
+pod 'PermissionKit/Camera'
+pod 'PermissionKit/Photos'
+pod 'PermissionKit/Contacts'
+pod 'PermissionKit/Event'
+pod 'PermissionKit/Motion'
+pod 'PermissionKit/Speech'
+pod 'PermissionKit/Media'
+pod 'PermissionKit/Siri'
+pod 'PermissionKit/Location'
+pod 'PermissionKit/Notification'
 ```
 
 **Carthage - Cartfile**
 
 ```ruby
-github "lixiang1994/Permission"
+github "lixiang1994/PermissionKit"
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ github "lixiang1994/Permission"
 First make sure to import the framework:
 
 ```swift
-import Permission
+import PermissionKit
 ```
 
 Here are some usage examples. All devices are also available as simulators:
@@ -103,9 +103,9 @@ CustomAlert  need to implement `PermissionAlertable` protocol
 ## Contributing
 
 If you have the need for a specific feature that you want implemented or if you experienced a bug, please open an issue.
-If you extended the functionality of Permission yourself and want others to use it too, please submit a pull request.
+If you extended the functionality of PermissionKit yourself and want others to use it too, please submit a pull request.
 
 
 ## License
 
-Permission is under MIT license. See the [LICENSE](LICENSE) file for more info.
+PermissionKit is under MIT license. See the [LICENSE](LICENSE) file for more info.

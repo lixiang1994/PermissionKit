@@ -4,9 +4,9 @@ inhibit_all_warnings!
 target 'Demo' do
   use_frameworks!
   
-#  pod 'Permission/Core', :path => "../"
-#  pod 'Permission/Alert', :path => "../"
-#  pod 'Permission/Location', :path => "../"
-  pod 'Permission', :path => "../"
+#  pod 'PermissionKit/Core', :path => "../"
+#  pod 'PermissionKit/Alert', :path => "../"
+#  pod 'PermissionKit/Location', :path => "../"
+  pod 'PermissionKit', :path => "../"
 
 end

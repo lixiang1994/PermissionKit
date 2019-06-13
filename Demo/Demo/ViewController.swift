@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Permission
 
 class ViewController: UIViewController {
 

@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
-s.name         = 'Permission'
+s.name         = 'PermissionKit'
 s.version      = '1.0.3'
 s.summary      = 'An elegant permission manager written in swift'
 
-s.homepage     = 'https://github.com/lixiang1994/Permission'
+s.homepage     = 'https://github.com/lixiang1994/PermissionKit'
 
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
@@ -12,7 +12,7 @@ s.author       = { 'LEE' => '18611401994@163.com' }
 
 s.platform     = :ios, '9.0'
 
-s.source       = { :git => 'https://github.com/lixiang1994/Permission.git', :tag => s.version }
+s.source       = { :git => 'https://github.com/lixiang1994/PermissionKit.git', :tag => s.version }
 
 s.source_files  = 'Sources/**/*.swift'
 

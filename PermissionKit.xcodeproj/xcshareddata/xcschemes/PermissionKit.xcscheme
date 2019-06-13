@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C93FF78F224F3492002277BC"
-               BuildableName = "Permission.framework"
-               BlueprintName = "Permission"
-               ReferencedContainer = "container:Permission.xcodeproj">
+               BuildableName = "PermissionKit.framework"
+               BlueprintName = "PermissionKit"
+               ReferencedContainer = "container:PermissionKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C93FF78F224F3492002277BC"
-            BuildableName = "Permission.framework"
-            BlueprintName = "Permission"
-            ReferencedContainer = "container:Permission.xcodeproj">
+            BuildableName = "PermissionKit.framework"
+            BlueprintName = "PermissionKit"
+            ReferencedContainer = "container:PermissionKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C93FF78F224F3492002277BC"
-            BuildableName = "Permission.framework"
-            BlueprintName = "Permission"
-            ReferencedContainer = "container:Permission.xcodeproj">
+            BuildableName = "PermissionKit.framework"
+            BlueprintName = "PermissionKit"
+            ReferencedContainer = "container:PermissionKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
