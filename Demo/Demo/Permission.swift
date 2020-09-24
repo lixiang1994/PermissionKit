@@ -12,7 +12,7 @@ enum Permission {
     
     enum Mode {
         case camera
-        case photos
+        case photos(Provider.PhotosType)
         case calendar
         case reminder
         case contacts
@@ -31,9 +31,17 @@ enum Permission {
                 mode = Provider.camera
                 mode.alias = { "相机" }
                 
-            case .photos:
-                mode = Provider.photos
-                mode.alias = { "相册" }
+            case .photos(let value):
+                mode = Provider.photos(value)
+                mode.alias = {
+                    switch value {
+                    case .addOnly:
+                        return "相册添加"
+                        
+                    case .readWrite:
+                        return "相册读写"
+                    }
+                }
                 
             case .calendar:
                 mode = Provider.calendar

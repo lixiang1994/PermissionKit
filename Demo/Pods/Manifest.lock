@@ -1,7 +1,7 @@
 PODS:
-  - PermissionKit (1.0.3):
-    - PermissionKit/Core (= 1.0.3)
-  - PermissionKit/Core (1.0.3)
+  - PermissionKit (1.1.0):
+    - PermissionKit/Core (= 1.1.0)
+  - PermissionKit/Core (1.1.0)
 
 DEPENDENCIES:
   - PermissionKit (from `../`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PermissionKit: 76b2bf0f2a215a841e748dd19ee0e14b1295da7c
+  PermissionKit: 455c947483f02a9b7375051b8ca9d37afe27d017
 
 PODFILE CHECKSUM: 4dc73dd6cdaffd340167ff40e69dd127da5b4afe
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.9.3

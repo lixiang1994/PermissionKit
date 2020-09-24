@@ -1,6 +1,6 @@
 {
   "name": "PermissionKit",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "summary": "An elegant permission manager written in swift",
   "homepage": "https://github.com/lixiang1994/PermissionKit",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/lixiang1994/PermissionKit.git",
-    "tag": "1.0.3"
+    "tag": "1.1.0"
   },
   "source_files": "Sources/**/*.swift",
   "requires_arc": true,
@@ -33,7 +33,7 @@
     {
       "name": "Alert",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -42,7 +42,7 @@
     {
       "name": "Camera",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -52,7 +52,7 @@
     {
       "name": "Photos",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -62,7 +62,7 @@
     {
       "name": "Event",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -72,7 +72,7 @@
     {
       "name": "Contacts",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -82,7 +82,7 @@
     {
       "name": "Speech",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -92,7 +92,7 @@
     {
       "name": "Motion",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -102,7 +102,7 @@
     {
       "name": "Media",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -112,7 +112,7 @@
     {
       "name": "Siri",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -122,7 +122,7 @@
     {
       "name": "Location",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },
@@ -132,7 +132,7 @@
     {
       "name": "Notification",
       "dependencies": {
-        "Permission/Core": [
+        "PermissionKit/Core": [
 
         ]
       },

@@ -15,7 +15,7 @@ public struct ChineseAlertContent: PermissionAlertContentSource {
     public func title(_ status: AlertStatus) -> String {
         switch status {
         case .prepare(let name):
-            return "\(Bundle.main.appName) 想要访问你的 \(name)"
+            return "\(Bundle.main.appName) 想要使用你的 \(name) 权限"
             
         case .denied(let name):
             return "\(name) 的权限被拒绝"
@@ -28,7 +28,7 @@ public struct ChineseAlertContent: PermissionAlertContentSource {
     public func message(_ status: AlertStatus) -> String {
         switch status {
         case .prepare(let name):
-            return "请开启 \(name) 的访问权限"
+            return "请您开启 \(name) 权限"
             
         case .denied(let name):
             return "请开启设置APP中的 \(name) 权限"

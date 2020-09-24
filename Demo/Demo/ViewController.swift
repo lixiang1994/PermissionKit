@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     
     private var list: [String] = [
         "相机权限",
-        "相册权限",
+        "相册权限 (添加)",
+        "相册权限 (读写)",
         "日历权限",
         "提醒权限",
         "联系人权限",
@@ -72,37 +73,40 @@ extension ViewController: UITableViewDataSource {
         case 0: // 相机权限
             mode = .camera
             
-        case 1: // 相册权限
-            mode = .photos
+        case 1: // 相册权限 (添加)
+            mode = .photos(.addOnly)
             
-        case 2: // 日历权限
+        case 2: // 相册权限 (读写)
+            mode = .photos(.readWrite)
+            
+        case 3: // 日历权限
             mode = .calendar
             
-        case 3: // 提醒权限
+        case 4: // 提醒权限
             mode = .reminder
             
-        case 4: // 联系人权限
+        case 5: // 联系人权限
             mode = .contacts
             
-        case 5: // 语音权限
+        case 6: // 语音权限
             mode = .speech
             
-        case 6: // 动作权限
+        case 7: // 动作权限
             mode = .motion
             
-        case 7: // 媒体权限
+        case 8: // 媒体权限
             mode = .media
             
-        case 8: // Siri权限
+        case 9: // Siri权限
             mode = .siri
             
-        case 9: // 麦克风权限
+        case 10: // 麦克风权限
             mode = .microphone
             
-        case 10: // 通知权限
+        case 11: // 通知权限
             mode = .notification
             
-        case 11: // 位置权限
+        case 12: // 位置权限
             mode = .location(.whenInUse)
             
         default:
