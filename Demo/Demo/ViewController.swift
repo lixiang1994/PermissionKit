@@ -104,7 +104,7 @@ extension ViewController: UITableViewDataSource {
             mode = .microphone
             
         case 11: // 通知权限
-            mode = .notification
+            mode = .notification([.alert, .badge, .sound, .provisional])
             
         case 12: // 位置权限
             mode = .location(.whenInUse)

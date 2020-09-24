@@ -22,7 +22,7 @@ enum Permission {
         case siri
         case microphone
         case location(Provider.LocationType)
-        case notification
+        case notification(Provider.NotificationOptions)
         
         var provider: Provider {
             let mode: Provider
@@ -79,8 +79,8 @@ enum Permission {
                 mode = Provider.location(value)
                 mode.alias = { "定位" }
                 
-            case .notification:
-                mode = Provider.notification
+            case .notification(let value):
+                mode = Provider.notification(value)
                 mode.alias = { "通知" }
             }
             return mode

@@ -64,7 +64,12 @@ struct LocationManager: Permissionable {
     }
     
     private var _status: CLAuthorizationStatus {
-        return CLLocationManager.authorizationStatus()
+        if #available(iOS 14.0, *) {
+            return CLLocationManager().authorizationStatus
+            
+        } else {
+            return CLLocationManager.authorizationStatus()
+        }
     }
     
     func request(_ сompletion: @escaping () -> Void) {
@@ -104,6 +109,15 @@ class LocationDelegate: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         guard status != .notDetermined else {
+            return
+        }
+        
+        self.сompletion()
+    }
+    
+    @available(iOS 14.0, *)
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        guard manager.authorizationStatus != .notDetermined else {
             return
         }
         

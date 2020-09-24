@@ -15,7 +15,40 @@ import UserNotifications
 
 extension Provider {
     
-    public static let notification: Provider = .init(NotificationManager())
+    public struct NotificationOptions : OptionSet {
+        
+        public typealias RawValue = UInt
+        
+        public var rawValue: RawValue
+        
+        public init(rawValue: RawValue) {
+            self.rawValue = rawValue
+        }
+
+        public static var badge: NotificationOptions { .init(rawValue: 1) }
+
+        public static var sound: NotificationOptions { .init(rawValue: 2) }
+
+        public static var alert: NotificationOptions { .init(rawValue: 4) }
+
+        public static var carPlay: NotificationOptions { .init(rawValue: 8) }
+
+        //available(iOS 12.0, *)
+        public static var criticalAlert: NotificationOptions { .init(rawValue: 16) }
+
+        //available(iOS 12.0, *)
+        public static var providesAppNotificationSettings: NotificationOptions { .init(rawValue: 32) }
+
+        //available(iOS 12.0, *)
+        public static var provisional: NotificationOptions { .init(rawValue: 64) }
+
+        //available(iOS 13.0, *)
+        public static var announcement: NotificationOptions { .init(rawValue: 128) }
+    }
+    
+    public static func notification(_ options: NotificationOptions) -> Provider {
+        return .init(NotificationManager(options))
+    }
 }
 
 struct NotificationManager: Permissionable {
@@ -39,7 +72,11 @@ struct NotificationManager: Permissionable {
         )
     } ()
     
-    init() {
+    private let options: Provider.NotificationOptions
+    
+    init(_ options: Provider.NotificationOptions) {
+        self.options = options
+        
         if #available(iOS 10.0, *) {
             NotificationManager.observer
         }
@@ -48,10 +85,10 @@ struct NotificationManager: Permissionable {
     var status: PermissionStatus {
         if #available(iOS 10.0, *) {
             switch _status {
-            case .authorized, .provisional:     return .authorized
-            case .denied:                       return .denied
-            case .notDetermined:                return .notDetermined
-            @unknown default:                   return .invalid
+            case .authorized, .provisional, .ephemeral:     return .authorized
+            case .denied:                                   return .denied
+            case .notDetermined:                            return .notDetermined
+            @unknown default:                               return .invalid
             }
             
         } else {
@@ -94,7 +131,7 @@ struct NotificationManager: Permissionable {
         
         if #available(iOS 10.0, *) {
             let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: [.badge, .alert, .sound]) {
+            center.requestAuthorization(options: options.options) {
                 (granted, error) in
                 center.getNotificationSettings { value in
                     DispatchQueue.main.async {
@@ -120,7 +157,7 @@ struct NotificationManager: Permissionable {
             )
             
             let settings = UIUserNotificationSettings(
-                types: [.badge, .sound, .alert],
+                types: options.types,
                 categories: nil
             )
             UIApplication.shared.registerUserNotificationSettings(settings)
@@ -135,5 +172,17 @@ fileprivate extension UserDefaults {
     var isRequestedNotifications: Bool {
         get { return bool(forKey: "Permission.RequestedNotifications") }
         set { set(newValue, forKey: "Permission.RequestedNotifications") }
+    }
+}
+
+private extension Provider.NotificationOptions {
+    
+    @available(iOS 10.0, *)
+    var options: UNAuthorizationOptions {
+        .init(rawValue: rawValue)
+    }
+    
+    var types: UIUserNotificationType {
+        .init(rawValue: rawValue)
     }
 }
