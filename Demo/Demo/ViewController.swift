@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         "Siri权限",
         "麦克风权限",
         "通知权限",
-        "位置权限"
+        "位置权限",
+        "跟踪权限"
     ]
     
     override func viewDidLoad() {
@@ -108,6 +109,9 @@ extension ViewController: UITableViewDataSource {
             
         case 12: // 位置权限
             mode = .location(.whenInUse)
+        
+        case 13: // 跟踪权限
+            mode = .tracking
             
         default:
             mode = .camera

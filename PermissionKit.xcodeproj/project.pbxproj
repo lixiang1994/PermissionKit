@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BE548222643CF3500EA5C7D /* Permission+Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */; };
 		C922334622A50FD800FD5DDE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334522A50FD800FD5DDE /* Protocol.swift */; };
 		C922334822A5107E00FD5DDE /* Permission+Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334722A5107E00FD5DDE /* Permission+Photos.swift */; };
 		C922334C22A510A500FD5DDE /* Permission+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334B22A510A500FD5DDE /* Permission+Event.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Permission+Tracking.swift"; sourceTree = "<group>"; };
 		C922334522A50FD800FD5DDE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		C922334722A5107E00FD5DDE /* Permission+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Photos.swift"; sourceTree = "<group>"; };
 		C922334B22A510A500FD5DDE /* Permission+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Event.swift"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				C9FDC32F22A6A176007F81DA /* Permission+Siri.swift */,
 				C922335E22A5306E00FD5DDE /* Permission+Location.swift */,
 				C922335622A5145700FD5DDE /* Permission+Notification.swift */,
+				9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				C922335F22A5306E00FD5DDE /* Permission+Location.swift in Sources */,
 				C922335722A5145700FD5DDE /* Permission+Notification.swift in Sources */,
 				C9FDC33022A6A176007F81DA /* Permission+Siri.swift in Sources */,
+				9BE548222643CF3500EA5C7D /* Permission+Tracking.swift in Sources */,
 				C922335422A5113D00FD5DDE /* Permission+Motion.swift in Sources */,
 				C922335D22A52B4700FD5DDE /* Permission+Media.swift in Sources */,
 				C922335022A5110200FD5DDE /* Permission+Speech.swift in Sources */,

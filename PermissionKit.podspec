@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'PermissionKit'
-s.version      = '1.2.0'
+s.version      = '1.3.0'
 s.summary      = 'An elegant permission manager written in swift'
 
 s.homepage     = 'https://github.com/lixiang1994/PermissionKit'
@@ -22,7 +22,7 @@ s.frameworks = 'UIKit', 'Foundation'
 
 s.swift_version = '5.0'
 
-s.default_subspec = 'Core'
+s.default_subspecs = 'Core', 'Camera', 'Photos', 'Event', 'Contacts', 'Speech', 'Motion', 'Media', 'Siri', 'Location', 'Notification', 'Tracking'
 
 s.subspec 'Core' do |sub|
     sub.source_files  = 'Sources/Core/*.swift'
@@ -91,6 +91,12 @@ s.subspec 'Notification' do |sub|
     sub.dependency 'PermissionKit/Core'
     sub.source_files  = 'Sources/Managers/Permission+Notification.swift'
     sub.weak_framework = 'UserNotifications'
+end
+
+s.subspec 'Tracking' do |sub|
+    sub.dependency 'PermissionKit/Core'
+    sub.source_files  = 'Sources/Managers/Permission+Tracking.swift'
+    sub.weak_frameworks = 'AppTrackingTransparency', 'AdSupport'
 end
 
 end

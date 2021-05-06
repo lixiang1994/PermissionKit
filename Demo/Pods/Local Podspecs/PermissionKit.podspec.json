@@ -1,6 +1,6 @@
 {
   "name": "PermissionKit",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "summary": "An elegant permission manager written in swift",
   "homepage": "https://github.com/lixiang1994/PermissionKit",
   "license": {
@@ -15,7 +15,7 @@
   },
   "source": {
     "git": "https://github.com/lixiang1994/PermissionKit.git",
-    "tag": "1.1.0"
+    "tag": "1.3.0"
   },
   "source_files": "Sources/**/*.swift",
   "requires_arc": true,
@@ -24,7 +24,20 @@
     "Foundation"
   ],
   "swift_versions": "5.0",
-  "default_subspecs": "Core",
+  "default_subspecs": [
+    "Core",
+    "Camera",
+    "Photos",
+    "Event",
+    "Contacts",
+    "Speech",
+    "Motion",
+    "Media",
+    "Siri",
+    "Location",
+    "Notification",
+    "Tracking"
+  ],
   "subspecs": [
     {
       "name": "Core",
@@ -138,6 +151,19 @@
       },
       "source_files": "Sources/Managers/Permission+Notification.swift",
       "weak_frameworks": "UserNotifications"
+    },
+    {
+      "name": "Tracking",
+      "dependencies": {
+        "PermissionKit/Core": [
+
+        ]
+      },
+      "source_files": "Sources/Managers/Permission+Tracking.swift",
+      "weak_frameworks": [
+        "AppTrackingTransparency",
+        "AdSupport"
+      ]
     }
   ],
   "swift_version": "5.0"
