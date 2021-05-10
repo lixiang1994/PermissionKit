@@ -22,6 +22,11 @@ public class Provider {
         return manager().status == .authorized
     }
     
+    /// 授权状态
+    public var status: PermissionStatus {
+        return manager().status
+    }
+    
     init(_ manager: @escaping @autoclosure () -> Permissionable) {
         self.manager = manager
     }

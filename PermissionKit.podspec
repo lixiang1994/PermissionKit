@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'PermissionKit'
-s.version      = '1.3.0'
+s.version      = '1.4.0'
 s.summary      = 'An elegant permission manager written in swift'
 
 s.homepage     = 'https://github.com/lixiang1994/PermissionKit'

@@ -37,7 +37,7 @@ extension Permissionable {
     }
 }
 
-enum PermissionStatus {
+public enum PermissionStatus {
     case authorized
     case denied
     case disabled
