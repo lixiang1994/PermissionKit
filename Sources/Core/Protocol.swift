@@ -13,7 +13,7 @@
 
 import Foundation
 
-protocol Permissionable {
+public protocol Permissionable {
     
     var status: PermissionStatus { get }
     
