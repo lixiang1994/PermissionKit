@@ -27,7 +27,7 @@ public class Provider {
         return manager().status
     }
     
-    init(_ manager: @escaping @autoclosure () -> Permissionable) {
+    public init(_ manager: @escaping @autoclosure () -> Permissionable) {
         self.manager = manager
     }
     
