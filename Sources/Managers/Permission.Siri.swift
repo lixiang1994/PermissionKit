@@ -1,5 +1,5 @@
 //
-//  Permission+Siri.swift
+//  Permission.Siri.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

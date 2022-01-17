@@ -1,5 +1,5 @@
 //
-//  Permission+Media.swift
+//  Permission.Media.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

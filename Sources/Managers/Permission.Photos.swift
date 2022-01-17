@@ -1,5 +1,5 @@
 //
-//  Permission+Photos.swift
+//  Permission.Photos.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

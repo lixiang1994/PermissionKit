@@ -1,5 +1,5 @@
 //
-//  Permission+Camera.swift
+//  Permission.Camera.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

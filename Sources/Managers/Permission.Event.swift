@@ -1,5 +1,5 @@
 //
-//  Permission+Event.swift
+//  Permission.Event.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

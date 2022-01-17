@@ -1,5 +1,5 @@
 //
-//  Permission+Notification.swift
+//  Permission.Notification.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

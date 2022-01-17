@@ -19,6 +19,8 @@ Permission Manager
 - [x] 语音.
 - [x] 定位.
 - [x] 通知.
+- [x] 应用广告追踪.
+- [x] 蓝牙.
 
 ## 安装
 
@@ -41,6 +43,8 @@ pod 'PermissionKit/Media'
 pod 'PermissionKit/Siri'
 pod 'PermissionKit/Location'
 pod 'PermissionKit/Notification'
+pod 'PermissionKit/Tracking'
+pod 'PermissionKit/Bluetooth'
 ```
 
 **Carthage - Cartfile**

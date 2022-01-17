@@ -1,5 +1,5 @@
 //
-//  Permission+Tracking.swift
+//  Permission.Tracking.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

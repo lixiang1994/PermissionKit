@@ -1,5 +1,5 @@
 //
-//  Permission+Contacts.swift
+//  Permission.Contacts.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

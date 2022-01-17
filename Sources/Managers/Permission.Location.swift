@@ -1,5 +1,5 @@
 //
-//  Permission+Location.swift
+//  Permission.Location.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐

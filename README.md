@@ -19,6 +19,8 @@ Permission Manager
 - [x] Speech.
 - [x] Location.
 - [x] Notification.
+- [x] AppTracking.
+- [x] Bluetooth.
 
 ## Installation
 
@@ -41,6 +43,8 @@ pod 'PermissionKit/Media'
 pod 'PermissionKit/Siri'
 pod 'PermissionKit/Location'
 pod 'PermissionKit/Notification'
+pod 'PermissionKit/Tracking'
+pod 'PermissionKit/Bluetooth'
 ```
 
 **Carthage - Cartfile**

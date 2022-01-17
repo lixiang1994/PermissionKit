@@ -1,5 +1,5 @@
 //
-//  Permission+Motion.swift
+//  Permission.Motion.swift
 //  ┌─┐      ┌───────┐ ┌───────┐
 //  │ │      │ ┌─────┘ │ ┌─────┘
 //  │ │      │ └─────┐ │ └─────┐
