@@ -7,37 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BE548222643CF3500EA5C7D /* Permission+Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */; };
+		9B1969D9274BBC4600B988FE /* Permission.Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1969D8274BBC4600B988FE /* Permission.Bluetooth.swift */; };
+		9BE548222643CF3500EA5C7D /* Permission.Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE548212643CF3500EA5C7D /* Permission.Tracking.swift */; };
 		C922334622A50FD800FD5DDE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334522A50FD800FD5DDE /* Protocol.swift */; };
-		C922334822A5107E00FD5DDE /* Permission+Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334722A5107E00FD5DDE /* Permission+Photos.swift */; };
-		C922334C22A510A500FD5DDE /* Permission+Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334B22A510A500FD5DDE /* Permission+Event.swift */; };
-		C922334E22A510D400FD5DDE /* Permission+Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334D22A510D400FD5DDE /* Permission+Contacts.swift */; };
-		C922335022A5110200FD5DDE /* Permission+Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334F22A5110200FD5DDE /* Permission+Speech.swift */; };
-		C922335422A5113D00FD5DDE /* Permission+Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335322A5113D00FD5DDE /* Permission+Motion.swift */; };
-		C922335722A5145700FD5DDE /* Permission+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335622A5145700FD5DDE /* Permission+Notification.swift */; };
-		C922335922A517BF00FD5DDE /* Permission+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335822A517BF00FD5DDE /* Permission+Camera.swift */; };
-		C922335D22A52B4700FD5DDE /* Permission+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335C22A52B4700FD5DDE /* Permission+Media.swift */; };
-		C922335F22A5306E00FD5DDE /* Permission+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335E22A5306E00FD5DDE /* Permission+Location.swift */; };
+		C922334822A5107E00FD5DDE /* Permission.Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334722A5107E00FD5DDE /* Permission.Photos.swift */; };
+		C922334C22A510A500FD5DDE /* Permission.Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334B22A510A500FD5DDE /* Permission.Event.swift */; };
+		C922334E22A510D400FD5DDE /* Permission.Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334D22A510D400FD5DDE /* Permission.Contacts.swift */; };
+		C922335022A5110200FD5DDE /* Permission.Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922334F22A5110200FD5DDE /* Permission.Speech.swift */; };
+		C922335422A5113D00FD5DDE /* Permission.Motion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335322A5113D00FD5DDE /* Permission.Motion.swift */; };
+		C922335722A5145700FD5DDE /* Permission.Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335622A5145700FD5DDE /* Permission.Notification.swift */; };
+		C922335922A517BF00FD5DDE /* Permission.Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335822A517BF00FD5DDE /* Permission.Camera.swift */; };
+		C922335D22A52B4700FD5DDE /* Permission.Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335C22A52B4700FD5DDE /* Permission.Media.swift */; };
+		C922335F22A5306E00FD5DDE /* Permission.Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922335E22A5306E00FD5DDE /* Permission.Location.swift */; };
 		C93FF795224F3492002277BC /* PermissionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C93FF793224F3492002277BC /* PermissionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9D24F6422A6751100CAED1E /* SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6322A6751100CAED1E /* SystemAlert.swift */; };
 		C9D24F6622A6756600CAED1E /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6522A6756600CAED1E /* Provider.swift */; };
 		C9D24F6822A67CD100CAED1E /* Provider+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6722A67CD100CAED1E /* Provider+Alert.swift */; };
 		C9D24F6B22A6830100CAED1E /* DefaultAlertContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D24F6A22A6830100CAED1E /* DefaultAlertContent.swift */; };
-		C9FDC33022A6A176007F81DA /* Permission+Siri.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDC32F22A6A176007F81DA /* Permission+Siri.swift */; };
+		C9FDC33022A6A176007F81DA /* Permission.Siri.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDC32F22A6A176007F81DA /* Permission.Siri.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Permission+Tracking.swift"; sourceTree = "<group>"; };
+		9B1969D8274BBC4600B988FE /* Permission.Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Bluetooth.swift; sourceTree = "<group>"; };
+		9BE548212643CF3500EA5C7D /* Permission.Tracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.Tracking.swift; sourceTree = "<group>"; };
 		C922334522A50FD800FD5DDE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		C922334722A5107E00FD5DDE /* Permission+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Photos.swift"; sourceTree = "<group>"; };
-		C922334B22A510A500FD5DDE /* Permission+Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Event.swift"; sourceTree = "<group>"; };
-		C922334D22A510D400FD5DDE /* Permission+Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Contacts.swift"; sourceTree = "<group>"; };
-		C922334F22A5110200FD5DDE /* Permission+Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Speech.swift"; sourceTree = "<group>"; };
-		C922335322A5113D00FD5DDE /* Permission+Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Motion.swift"; sourceTree = "<group>"; };
-		C922335622A5145700FD5DDE /* Permission+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Notification.swift"; sourceTree = "<group>"; };
-		C922335822A517BF00FD5DDE /* Permission+Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Camera.swift"; sourceTree = "<group>"; };
-		C922335C22A52B4700FD5DDE /* Permission+Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Media.swift"; sourceTree = "<group>"; };
-		C922335E22A5306E00FD5DDE /* Permission+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Permission+Location.swift"; sourceTree = "<group>"; };
+		C922334722A5107E00FD5DDE /* Permission.Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Photos.swift; sourceTree = "<group>"; };
+		C922334B22A510A500FD5DDE /* Permission.Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Event.swift; sourceTree = "<group>"; };
+		C922334D22A510D400FD5DDE /* Permission.Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Contacts.swift; sourceTree = "<group>"; };
+		C922334F22A5110200FD5DDE /* Permission.Speech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Speech.swift; sourceTree = "<group>"; };
+		C922335322A5113D00FD5DDE /* Permission.Motion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Motion.swift; sourceTree = "<group>"; };
+		C922335622A5145700FD5DDE /* Permission.Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Notification.swift; sourceTree = "<group>"; };
+		C922335822A517BF00FD5DDE /* Permission.Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Camera.swift; sourceTree = "<group>"; };
+		C922335C22A52B4700FD5DDE /* Permission.Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Media.swift; sourceTree = "<group>"; };
+		C922335E22A5306E00FD5DDE /* Permission.Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.Location.swift; sourceTree = "<group>"; };
 		C93FF790224F3492002277BC /* PermissionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FF793224F3492002277BC /* PermissionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionKit.h; sourceTree = "<group>"; };
 		C93FF794224F3492002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		C9D24F6522A6756600CAED1E /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		C9D24F6722A67CD100CAED1E /* Provider+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Provider+Alert.swift"; sourceTree = "<group>"; };
 		C9D24F6A22A6830100CAED1E /* DefaultAlertContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertContent.swift; sourceTree = "<group>"; };
-		C9FDC32F22A6A176007F81DA /* Permission+Siri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Permission+Siri.swift"; sourceTree = "<group>"; };
+		C9FDC32F22A6A176007F81DA /* Permission.Siri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permission.Siri.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,17 +64,18 @@
 		C922335522A5144000FD5DDE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C922335822A517BF00FD5DDE /* Permission+Camera.swift */,
-				C922334722A5107E00FD5DDE /* Permission+Photos.swift */,
-				C922334B22A510A500FD5DDE /* Permission+Event.swift */,
-				C922334D22A510D400FD5DDE /* Permission+Contacts.swift */,
-				C922334F22A5110200FD5DDE /* Permission+Speech.swift */,
-				C922335322A5113D00FD5DDE /* Permission+Motion.swift */,
-				C922335C22A52B4700FD5DDE /* Permission+Media.swift */,
-				C9FDC32F22A6A176007F81DA /* Permission+Siri.swift */,
-				C922335E22A5306E00FD5DDE /* Permission+Location.swift */,
-				C922335622A5145700FD5DDE /* Permission+Notification.swift */,
-				9BE548212643CF3500EA5C7D /* Permission+Tracking.swift */,
+				C922335822A517BF00FD5DDE /* Permission.Camera.swift */,
+				C922334722A5107E00FD5DDE /* Permission.Photos.swift */,
+				C922334B22A510A500FD5DDE /* Permission.Event.swift */,
+				C922334D22A510D400FD5DDE /* Permission.Contacts.swift */,
+				C922334F22A5110200FD5DDE /* Permission.Speech.swift */,
+				C922335322A5113D00FD5DDE /* Permission.Motion.swift */,
+				C922335C22A52B4700FD5DDE /* Permission.Media.swift */,
+				C9FDC32F22A6A176007F81DA /* Permission.Siri.swift */,
+				C922335E22A5306E00FD5DDE /* Permission.Location.swift */,
+				C922335622A5145700FD5DDE /* Permission.Notification.swift */,
+				9BE548212643CF3500EA5C7D /* Permission.Tracking.swift */,
+				9B1969D8274BBC4600B988FE /* Permission.Bluetooth.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -204,21 +207,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C922334622A50FD800FD5DDE /* Protocol.swift in Sources */,
-				C922334C22A510A500FD5DDE /* Permission+Event.swift in Sources */,
+				C922334C22A510A500FD5DDE /* Permission.Event.swift in Sources */,
 				C9D24F6622A6756600CAED1E /* Provider.swift in Sources */,
-				C922335922A517BF00FD5DDE /* Permission+Camera.swift in Sources */,
-				C922334E22A510D400FD5DDE /* Permission+Contacts.swift in Sources */,
+				C922335922A517BF00FD5DDE /* Permission.Camera.swift in Sources */,
+				C922334E22A510D400FD5DDE /* Permission.Contacts.swift in Sources */,
 				C9D24F6822A67CD100CAED1E /* Provider+Alert.swift in Sources */,
 				C9D24F6422A6751100CAED1E /* SystemAlert.swift in Sources */,
 				C9D24F6B22A6830100CAED1E /* DefaultAlertContent.swift in Sources */,
-				C922335F22A5306E00FD5DDE /* Permission+Location.swift in Sources */,
-				C922335722A5145700FD5DDE /* Permission+Notification.swift in Sources */,
-				C9FDC33022A6A176007F81DA /* Permission+Siri.swift in Sources */,
-				9BE548222643CF3500EA5C7D /* Permission+Tracking.swift in Sources */,
-				C922335422A5113D00FD5DDE /* Permission+Motion.swift in Sources */,
-				C922335D22A52B4700FD5DDE /* Permission+Media.swift in Sources */,
-				C922335022A5110200FD5DDE /* Permission+Speech.swift in Sources */,
-				C922334822A5107E00FD5DDE /* Permission+Photos.swift in Sources */,
+				C922335F22A5306E00FD5DDE /* Permission.Location.swift in Sources */,
+				C922335722A5145700FD5DDE /* Permission.Notification.swift in Sources */,
+				C9FDC33022A6A176007F81DA /* Permission.Siri.swift in Sources */,
+				9BE548222643CF3500EA5C7D /* Permission.Tracking.swift in Sources */,
+				C922335422A5113D00FD5DDE /* Permission.Motion.swift in Sources */,
+				C922335D22A52B4700FD5DDE /* Permission.Media.swift in Sources */,
+				C922335022A5110200FD5DDE /* Permission.Speech.swift in Sources */,
+				9B1969D9274BBC4600B988FE /* Permission.Bluetooth.swift in Sources */,
+				C922334822A5107E00FD5DDE /* Permission.Photos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

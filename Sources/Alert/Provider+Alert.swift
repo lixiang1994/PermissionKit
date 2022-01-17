@@ -54,7 +54,9 @@ extension Provider {
         manager.checkUsageDescriptions()
         switch manager.status {
         case .authorized:
-            сompletion(true)
+            manager.request {
+                сompletion(true)
+            }
             
         case .denied:
             alert.show(.denied(name)) { result in
