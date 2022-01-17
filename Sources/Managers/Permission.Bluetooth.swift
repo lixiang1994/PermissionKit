@@ -46,10 +46,10 @@ struct BluetoothManager: Permissionable {
 }
 
 /// 获取蓝牙状态类
-enum BluetoothState {
+public enum BluetoothState {
     
     /// App 授权状态
-    enum Authorization {
+    public enum Authorization {
         case authorized
         case denied
         case disabled
@@ -58,7 +58,7 @@ enum BluetoothState {
     }
     
     /// 系统开关状态
-    enum Powered {
+    public enum Powered {
         case notDetermined
         case denied
         
@@ -66,7 +66,7 @@ enum BluetoothState {
         case unknown
     }
     
-    static var status: Authorization {
+    public static var status: Authorization {
         if #available(iOS 13.1, tvOS 13.1, *) {
             switch CBCentralManager.authorization {
             case .allowedAlways: return .authorized
@@ -94,17 +94,16 @@ enum BluetoothState {
         }
     }
     
-    static func request(completion: @escaping () -> Void) {
+    public static func request(completion: @escaping () -> Void) {
         BluetoothHandler.shared.completion = completion
-        BluetoothHandler.shared.reqeustUpdate()
+        BluetoothHandler.shared.requestUpdate()
     }
     
-    static func powered(showPower: Bool = false, _ completion: @escaping (Powered) -> Void) {
+    public static func powered(showPower: Bool = false, _ completion: @escaping (Powered) -> Void) {
         switch BluetoothState.status {
         case .authorized:
             let manager = CBCentralManager(delegate: nil, queue: nil, options: [CBCentralManagerOptionShowPowerAlertKey : showPower])
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                print(manager.state.rawValue)
                 switch manager.state {
                 case .poweredOff:   return completion(.off)
                 case .poweredOn:    return completion(.on)
@@ -138,7 +137,7 @@ fileprivate class BluetoothHandler: NSObject, CBCentralManagerDelegate {
     
     var manager: CBCentralManager?
     
-    func reqeustUpdate() {
+    func requestUpdate() {
         if manager == nil {
             self.manager = CBCentralManager(delegate: self, queue: nil, options: [:])
         } else {
