@@ -67,6 +67,8 @@ struct ReminderManager: Permissionable {
         case .denied:           return .denied
         case .restricted:       return .disabled
         case .notDetermined:    return .notDetermined
+        case .fullAccess:       return .authorized
+        case .writeOnly:        return .authorized
         @unknown default:       return .invalid
         }
     }
