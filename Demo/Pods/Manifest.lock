@@ -1,39 +1,44 @@
 PODS:
-  - PermissionKit (1.3.0):
-    - PermissionKit/Camera (= 1.3.0)
-    - PermissionKit/Contacts (= 1.3.0)
-    - PermissionKit/Core (= 1.3.0)
-    - PermissionKit/Event (= 1.3.0)
-    - PermissionKit/Location (= 1.3.0)
-    - PermissionKit/Media (= 1.3.0)
-    - PermissionKit/Motion (= 1.3.0)
-    - PermissionKit/Notification (= 1.3.0)
-    - PermissionKit/Photos (= 1.3.0)
-    - PermissionKit/Siri (= 1.3.0)
-    - PermissionKit/Speech (= 1.3.0)
-    - PermissionKit/Tracking (= 1.3.0)
-  - PermissionKit/Camera (1.3.0):
+  - PermissionKit (1.6.0):
+    - PermissionKit/Bluetooth (= 1.6.0)
+    - PermissionKit/Camera (= 1.6.0)
+    - PermissionKit/Contacts (= 1.6.0)
+    - PermissionKit/Core (= 1.6.0)
+    - PermissionKit/Event (= 1.6.0)
+    - PermissionKit/Location (= 1.6.0)
+    - PermissionKit/Media (= 1.6.0)
+    - PermissionKit/Motion (= 1.6.0)
+    - PermissionKit/Notification (= 1.6.0)
+    - PermissionKit/Photos (= 1.6.0)
+    - PermissionKit/Siri (= 1.6.0)
+    - PermissionKit/Speech (= 1.6.0)
+    - PermissionKit/Tracking (= 1.6.0)
+  - PermissionKit/Bluetooth (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Contacts (1.3.0):
+  - PermissionKit/Camera (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Core (1.3.0)
-  - PermissionKit/Event (1.3.0):
+  - PermissionKit/Contacts (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Location (1.3.0):
+  - PermissionKit/Core (1.6.0):
+    - PermissionKit/Privacy
+  - PermissionKit/Event (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Media (1.3.0):
+  - PermissionKit/Location (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Motion (1.3.0):
+  - PermissionKit/Media (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Notification (1.3.0):
+  - PermissionKit/Motion (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Photos (1.3.0):
+  - PermissionKit/Notification (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Siri (1.3.0):
+  - PermissionKit/Photos (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Speech (1.3.0):
+  - PermissionKit/Privacy (1.6.0)
+  - PermissionKit/Siri (1.6.0):
     - PermissionKit/Core
-  - PermissionKit/Tracking (1.3.0):
+  - PermissionKit/Speech (1.6.0):
+    - PermissionKit/Core
+  - PermissionKit/Tracking (1.6.0):
     - PermissionKit/Core
 
 DEPENDENCIES:
@@ -44,8 +49,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PermissionKit: 0914e0e4c7ca9e8c5163926d25ff151b25df06db
+  PermissionKit: afc9d0a834126aae7c03650ef519fe8793d44492
 
 PODFILE CHECKSUM: c700c41c391b70b5dcd6e1fce8cd14bae906b944
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.15.2

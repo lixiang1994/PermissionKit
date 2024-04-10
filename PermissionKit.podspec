@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'PermissionKit'
-s.version      = '1.5.1'
+s.version      = '1.6.0'
 s.summary      = 'An elegant permission manager written in swift'
 
 s.homepage     = 'https://github.com/lixiang1994/PermissionKit'
@@ -26,6 +26,7 @@ s.default_subspecs = 'Core', 'Camera', 'Photos', 'Event', 'Contacts', 'Speech', 
 
 s.subspec 'Core' do |sub|
     sub.source_files  = 'Sources/Core/*.swift'
+    sub.dependency 'PermissionKit/Privacy'
 end
 
 s.subspec 'Alert' do |sub|
@@ -103,6 +104,12 @@ s.subspec 'Bluetooth' do |sub|
     sub.dependency 'PermissionKit/Core'
     sub.source_files  = 'Sources/Managers/Permission.Bluetooth.swift'
     sub.weak_frameworks = 'CoreBluetooth'
+end
+
+s.subspec 'Privacy' do |sub|
+    sub.resource_bundles = {
+        "Privacy" => 'Sources/PrivacyInfo.xcprivacy'
+    }
 end
 
 end
