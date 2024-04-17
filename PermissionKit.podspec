@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'PermissionKit'
-s.version      = '1.6.0'
+s.version      = '1.6.1'
 s.summary      = 'An elegant permission manager written in swift'
 
 s.homepage     = 'https://github.com/lixiang1994/PermissionKit'
@@ -108,7 +108,7 @@ end
 
 s.subspec 'Privacy' do |sub|
     sub.resource_bundles = {
-        "Privacy" => 'Sources/PrivacyInfo.xcprivacy'
+        s.name => 'Sources/PrivacyInfo.xcprivacy'
     }
 end
 
